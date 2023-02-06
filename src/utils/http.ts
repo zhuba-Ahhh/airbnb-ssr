@@ -1,12 +1,12 @@
 import axios, {
   AxiosRequestConfig,
   AxiosResponse,
-  InternalAxiosRequestConfig,
-} from "axios";
+  InternalAxiosRequestConfig
+} from 'axios';
 
 const defaultConfig = {
   timeout: 5000,
-  baseUrl: "",
+  baseUrl: ''
 };
 
 class Http {

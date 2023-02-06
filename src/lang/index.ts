@@ -1,15 +1,15 @@
-import { createI18n } from "vue-i18n";
+import { createI18n } from 'vue-i18n';
 
-import zh from "./src/zh";
-import en from "./src/en";
+import zh from './src/zh';
+import en from './src/en';
 
 const i18n = createI18n({
   legacy: false,
-  locale: "zh",
+  locale: 'zh',
   messages: {
     zh,
-    en,
-  },
+    en
+  }
 });
 
 export default i18n;

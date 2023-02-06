@@ -1,6 +1,6 @@
 export default {
   message: {
-    home: "Home",
-    mine: "Mine",
-  },
+    home: 'Home',
+    mine: 'Mine'
+  }
 };

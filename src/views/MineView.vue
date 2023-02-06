@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import IndexedDB from '@/utils/indexedDB'
-import { fetchRoom } from '@/apis'
+import { fetchRoom, fetchTest } from '@/apis'
 
 const storeName = 'room'
 const airbnbDB = new IndexedDB('airbnb')
@@ -28,10 +28,18 @@ function getItem(key: number | string) {
   airbnbDB.getItem(storeName, key)
 }
 
-function getRoom() {
-  fetchRoom()
+function getTest() {
+  fetchTest().then(res => {
+    console.log('真实数据', res)
+  })
 }
 
+function getRoom() {
+  fetchRoom().then(res => {
+    console.log('mock数据', res)
+  })
+}
+getTest()
 getRoom()
 </script>
 
