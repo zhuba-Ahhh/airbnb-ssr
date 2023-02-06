@@ -4,6 +4,7 @@ import { ref } from 'vue'
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import en from 'element-plus/dist/locale/en.mjs'
 import { useI18n } from 'vue-i18n'
+import headerCommon from '@/components/layout/headerCommon.vue'
 
 const locale = ref(zhCn)
 const Lang = ref('英')
@@ -28,6 +29,7 @@ const changeLang = () => {
 
 <template>
   <el-config-provider :locale="locale">
+    <headerCommon></headerCommon>
     <button @click="changeLang()">切换{{ Lang }}文</button>
     <img src="/vite.svg" class="logo" alt="Vite logo" />
 
