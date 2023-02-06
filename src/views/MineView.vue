@@ -29,7 +29,7 @@ function getItem(key: number | string) {
 }
 
 function getTest() {
-  fetchTest().then(res => {
+  fetchTest().then((res: any) => {
     console.log('真实数据', res)
   })
 }
