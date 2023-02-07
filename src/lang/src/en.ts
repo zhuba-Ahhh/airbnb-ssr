@@ -1,6 +1,8 @@
 export default {
   message: {
     home: 'Home',
-    mine: 'Mine'
+    mine: 'Mine',
+    en: 'Engish',
+    zh: 'Chinese'
   }
 };

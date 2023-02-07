@@ -1,13 +1,13 @@
 import { createI18n } from 'vue-i18n';
 
-import zh from './src/zh';
+import zhCn from './src/zhCn';
 import en from './src/en';
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'zh',
+  locale: 'zhCn',
   messages: {
-    zh,
+    zhCn,
     en
   }
 });

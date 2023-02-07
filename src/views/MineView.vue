@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import IndexedDB from '@/utils/indexedDB'
 import { fetchRoom, fetchTest } from '@/apis'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const storeName = 'room'
 const airbnbDB = new IndexedDB('airbnb')
@@ -44,9 +47,12 @@ getRoom()
 </script>
 
 <template>
-  <main>Mine</main>
-  <el-button @click="addData()">addData</el-button>
-  <el-button @click="deleteData('1')">deleteData</el-button>
-  <el-button @click="getAllData()">getAllData</el-button>
-  <el-button @click="getItem('1')">getItem</el-button>
+  {{ t("message.mine") }}
+  <hr />
+  <div>
+    <el-button @click="addData()">addData</el-button>
+    <el-button @click="deleteData('1')">deleteData</el-button>
+    <el-button @click="getAllData()">getAllData</el-button>
+    <el-button @click="getItem('1')">getItem</el-button>
+  </div>
 </template>

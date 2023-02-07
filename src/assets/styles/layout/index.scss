@@ -1,0 +1,46 @@
+.header-common {
+  display: flex;
+  justify-content: space-between; // 左右布局
+  width: 100%;
+  height:80px;
+  position: relative;
+  align-items: center;
+
+  .el-menu{
+    width: inherit;
+    padding: 0 25px;
+    justify-content: right;
+    height: 80px;
+    align-items: center;
+
+    .el-menu-item {
+      height: 80px;
+      font-size: 16px;
+
+      &:last-child{
+        padding-right: 0;
+      }
+
+      .el-sub-menu_title {
+        font-size: 16px;
+      }
+    }
+  }
+  .avatar {
+    height: 40px;
+    width: 40px;
+
+    box-shadow: rgb(235,235,235) 0px 0px 0px 2px;
+    border-radius: 50px;
+
+    margin-right: 5px;
+  }
+
+  .logo {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left:15px;
+    z-index: 10;
+  }
+}

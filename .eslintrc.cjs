@@ -19,6 +19,7 @@ module.exports = {
     'vue'
   ],
   rules: {
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+    'func-call-spacing': 'off'
   }
 }
