@@ -28,6 +28,6 @@ jobs:
           # 部署打包目录
           folder: dist
           # 密钥名
-          token: ${{ secrets.VITE_VUE_DEPLOY }}
+          token: ${{ secrets.DEPLOY_TOKEN }}
           # 分支
           branch: gh-pages
