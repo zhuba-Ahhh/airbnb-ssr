@@ -8,6 +8,7 @@ import headerCommon from '@/components/layout/headerCommon.vue'
 const { locale: myLocale } = useI18n()
 const locale = ref(zhCn)
 
+// 更改全局语言
 const changeLang = (language: string) => {
   locale.value = language === 'en' ? en : zhCn
   myLocale.value = language

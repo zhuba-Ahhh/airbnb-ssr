@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between; // 左右布局
   width: 100%;
-  height:80px;
+  height: 80px;
   position: relative;
   align-items: center;
 
-  .el-menu{
+  .el-menu {
     width: inherit;
-    padding: 0 25px;
+    padding: 0 20px;
     justify-content: right;
     height: 80px;
     align-items: center;
@@ -17,8 +17,8 @@
       height: 80px;
       font-size: 16px;
 
-      &:last-child{
-        padding-right: 0;
+      &:last-child {
+        padding-right: 20px;
       }
 
       .el-sub-menu_title {
@@ -26,21 +26,20 @@
       }
     }
   }
+
   .avatar {
     height: 40px;
     width: 40px;
 
-    box-shadow: rgb(235,235,235) 0px 0px 0px 2px;
-    border-radius: 50px;
-
-    margin-right: 5px;
+    box-shadow: rgb(235, 235, 235) 0px 0px 0px 2px;
+    border-radius: 50%;
   }
 
   .logo {
     width: 30px;
     height: auto;
     position: absolute;
-    left:15px;
+    left: 15px;
     z-index: 10;
   }
 }
