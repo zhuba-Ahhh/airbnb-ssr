@@ -21,3 +21,13 @@ jobs:
 
       - name: pnpm build
         run: pnpm build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # 部署打包目录
+          folder: dist
+          # 密钥名
+          token: ${{ secrets.VITE_VUE_DEPLOY }}
+          # 分支
+          branch: gh-pages
